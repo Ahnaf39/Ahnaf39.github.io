@@ -1,43 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Portfolio Website</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+  <title>Portfolio Website - Ahnaf Ahsan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+  <div class="container">
+      <a class="navbar-brand" href="#">Ahnaf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+          
+      </div>
+  </div>
+</nav>
+ <!-- main banner -->
+ <section class="bgimage" id="home">
+  <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hero-text">
+          <h2 class="hero_title">Hi, I'm <span class = "name">Muhammad Ahnaf Ahsan</span></h2>
+          <p class="hero_desc">I am an Electrical Engineering graduate from the University of British Columbia (UBC).</p>
+      </div>
+      </div>
+  </div>
+</section>
+<div class="about-me-resume-container">
+  <div class="row">
+    <div class="col-lg-6">
+      <section id="about">
+        <h1 class="text-center">About Me</h1>
+        <div class="card aboutMe mt-4">
+          <div class="card-body">
+            <p class="card-text mt-3"> Hi there! I'm Ahnaf, a recent university graduate who is highly motivated and passionate about using my knowledge to make a positive impact in the real world. As an aspiring developer, I enjoy building applications and devices that make people's daily lives simpler, easier, and more efficient. My experience in Object Oriented Programming languages like C#, Python, and Java, SQL Database development, and REST API development has equipped me with the skills and knowledge necessary to succeed in the field of software development.                
+            </p>
+            <p class="card-text mt-3"> I'm always looking for new opportunities to learn and grow, and I'm excited about the prospect of working on projects that challenge me to think creatively and innovate. I believe that technology has the power to bring people together and make the world a better place, and I'm eager to be a part of that positive change.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-lg-6">
+      <section id="resume">
+        <h1 class="text-center">Resume</h1>
+        <div class="card resume-text mt-4">
+          <div class="card-body">
+            <p class="card-text mt-3">Below is a preview of my resume and its download link:</p>
+            <div class="resume-preview text-center">
+              <iframe src="../../../Downloads/AhsanMAhnafResume.pdf"></iframe>
+            </div>
+            <div class="resume-preview text-center">
+              <a href="../../../Downloads/AhsanMAhnafResume.pdf" download>Download</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- services section-->
+<section id="projects">
+  <div class="projects-container mt-4 pt-4">
+      <h1 class="text-center">Projects</h1>
+      <div class="row">
+          <div class="col-lg-6 mt-4">
+              <div class="card projectText">
+                  <div class="card-body">
+                      <i class="fas projectIcon fa-dog"></i>
+                      <h4 class="card-title mt-3">Gestured Controlled Robot Pet</h4>
+                      <p class="card-text mt-3"> My Capstone project involved creating a robotic pet using Python, Robotic Operating System (ROS), and Deep Learning technologies. I developed a state machine that allowed the robot to interpret user gestures and perform associated actions, such as following or spinning. In addition, our pet robot was equipped with a camera that could capture pictures of the user. By combining traditional pet actions with modern technology, we created a one-of-a-kind experience that was both entertaining and innovative.
+                      </p>
+                      <div class="text-center">
+                        <a href="https://github.com/kylerhunag/gesture_controlled_robot_pet" class="btn btn-success">GitHub Link</a>
+                    </div>
+                  </div>
+              </div>  
+          </div>
+          <div class="col-lg-6 mt-4">
+              <div class="card projectText">
+                  <div class="card-body">
+                      <i class='fas projectIcon fa-clipboard-list'></i>
+                      <h4 class="card-title mt-3">Cache and Paste</h4>
+                      <p class="card-text mt-3">My friend and I created a clipboard app that was designed to store up to 5 of the most recent copies in your Windows clipboard. With our app, users could paste any of those 5 items at any time, making it much more efficient than the standard clipboard, which only allows you to store one item. By using Java for the backend and JavaFX for the front end, we were able to create a seamless user experience that was easy to use and navigate. Our app helped users to avoid losing copied items and saved them valuable time when working with multiple copied items at once.
+                      </p>
+                  </div>
+              </div>  
+          </div>
+
+          <div class="col-lg-6 mt-4">
+              <div class="card projectText">
+                  <div class="card-body">
+                      <i class='fas projectIcon fa-database'></i>
+                      <h4 class="card-title mt-3">Database and REST API</h4>
+                      <p class="card-text mt-3">As part of a university project, I used C# and Entity Framework to create a database to store information related to a hypothetical warehouse, including product details, product locations, orders, and robots in use. To further enhance the user experience, I also designed a REST API that enabled users to create orders, access a list of orders, and view the quantity of products in the warehouse. The API also provided a list of products that were low in stock, ensuring that users were always aware of any potential shortages. By implementing these features, our database and API helped users to better manage and organize their warehouse operations.
+                      </p>
+                  </div>
+              </div>  
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="card projectText">
+                <div class="card-body">
+                    <i class='fas projectIcon fa-microchip'></i>
+                    <h4 class="card-title mt-3">Dog vs Cat Binary Classifier</h4>
+                    <p class="card-text mt-3">I developed a binary image classifier that uses Python and PyTorch to differentiate between images of dogs and cats. Due to hardware limitations, the model was trained on a small dataset of 1500 images of each animal, resulting in a 70% accuracy rate. The model used seven convolution layers, each activated by a ReLU layer, and two linear layers. To improve the model's performance, I incorporated max pool and dropout layers. Despite the limited dataset, the model was able to accurately classify the images, demonstrating the potential for further improvements with more robust computing power.
+                    </p>
+                </div>
+            </div>  
+        </div>
+      </div>
+  </div>
+</section>
+<!-- contact section-->
+<section id="contact">
+  <div class="container mt-3 contactContent">
+      <h1 class="text-center">Contact Me</h1>
+
+      <div class="row mt-4">
+          <div class="col-lg-6">
+              <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+              <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                  <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.820865643997!2d-123.12003874856117!3d49.2797914787948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717e685de537%3A0x3b7adf624070d4fe!2s480%20Robson%20St%2C%20Vancouver%2C%20BC%20V6B%201S1!5e0!3m2!1sen!2sca!4v1676687469382!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                  <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                  </style>
+              </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-info">
+              <!-- Contact List -->
+              <ul>
+                <li>
+                  <i class='fas servicesIcon fa-mail-bulk'></i>
+                  <a href="mailto:youremail@example.com">ahnaf.39@alumni.ubc.ca</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i class='fas servicesIcon fa-phone'></i>
+                  <a href="tel:+1234567890">+1 (778) 680-4369</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+</section>
+<!-- footer section-->
+<footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.linkedin.com/in/ahnafahsan25" target="blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about">
-			<h2>About Me</h2>
-			<p>Hi, my name is Ahnaf Ahsan and I'm a recent Electrical Engineering graduate from The University of British Columbia (UBC). I'm passionate about software development and love creating solutions that makes people's daily lives easier and more efficient.</p>
-		</section>
-		<section id="resume">
-			<h2>My Resume</h2>
-			<p>Here's a link to my resume: <a href="../../../Downloads/AhsanMAhnafResume.pdf">Resume</a></p>
-		</section>
-		<section id="projects">
-			<h2>My Projects</h2>
-			<ul>
-				<li><a href="../../../Downloads/CacheAndPaste-master.zip">Project 1 - Cache and Paste ZIP</a></li>
-			</ul>
-		</section>
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<p>You can reach me at ahnaf.39@alumni.ubc.ca or connect with me on https://www.linkedin.com/in/ahnafahsan25/.</p>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 Muhammad Ahnaf Ahsan. All rights reserved.</p>
-	</footer>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,172 @@
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/myImagebg.png');
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 3rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: right;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.name {
+    color: red;
+}
+/* about me styling */
+.about-me-resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+}
+.aboutMe.card {
+    height: 350px;
+    cursor: pointer;
+}
+  
+.aboutMe:hover {
+    border: 1px solid #008000;
+}
+  
+/* resume styling */
+.resume-text.card {
+    height: 350px;
+    cursor: pointer;
+}
+  
+.resume-text {
+    text-align: center;
+    width: 100%;
+}
+  
+.resume-text:hover {
+    border: 1px solid #008000;
+}
+  
+.resume-preview {
+    flex: 1 1 100%;
+    height: 200px;
+    max-width: 53%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+  
+.resume-preview iframe {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+}
+  
+.resume-preview a {
+    position: relative;
+    bottom: -20px;
+    right: 0px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+  
+.resume-preview a:hover {
+    background-color: #3e8e41;
+}
+
+/* project section css */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+}
+.projectText.card {
+    height: 330px;
+    cursor: pointer;
+}
+.projectIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .projectIcon {
+    color: #008000;
+}
+.projectText:hover {
+    border: 1px solid #008000;
+}
+/* contact info styling */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+}
+.contact-info h2 {
+    margin-top: 0;
+}
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact-info li img {
+    margin-right: 10px;
+}
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-linkedin:hover{
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+#about, #resume, #projects, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
