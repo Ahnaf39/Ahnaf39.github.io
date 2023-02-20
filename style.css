@@ -35,7 +35,7 @@
     padding: 20px;
 }
 .aboutMe.card {
-    height: 350px;
+    height: 22rem;
     cursor: pointer;
 }
   
@@ -45,7 +45,7 @@
   
 /* resume styling */
 .resume-text.card {
-    height: 350px;
+    height: 22rem;
     cursor: pointer;
 }
   
@@ -60,7 +60,7 @@
   
 .resume-preview {
     flex: 1 1 100%;
-    height: 200px;
+    height: 12.5rem;
     max-width: 53%;
     cursor: pointer;
     position: relative;
@@ -71,7 +71,7 @@
 .resume-preview iframe {
     position: relative;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 50%;
     height: 100%;
     border: none;
@@ -80,7 +80,7 @@
   
 .resume-preview a {
     position: relative;
-    bottom: -20px;
+    bottom: -1.25rem;
     right: 0px;
     background-color: #4CAF50;
     color: #fff;
@@ -102,11 +102,11 @@
     padding: 20px;
 }
 .projectText.card {
-    height: 330px;
+    height: 22rem;
     cursor: pointer;
 }
 .projectIcon {
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
     width: 100%;
 }
@@ -127,7 +127,7 @@
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     padding: 20px;
-    max-width: 400px;
+    max-width: 25rem;
     margin: auto;
     border-radius: 5px;
 }
@@ -149,7 +149,7 @@
 }
 /* social media icons styling */
 .social-icons {
-    font-size: 36px;
+    font-size: 2.25rem;
     cursor: pointer;
 }
 .fa-linkedin:hover{
