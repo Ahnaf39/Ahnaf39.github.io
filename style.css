@@ -1,3 +1,22 @@
+.wip-message {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .wip-message {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffcc00;
+        color: #000000;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 9999;
+    }
+}
 .navbarScroll.navbarDark {
     background-color: black;
 }
@@ -170,18 +189,3 @@
 #contact {
     padding-bottom: 4rem;
 }
-@media only screen and (max-width: 900px) {
-    .wip-message {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #ffcc00;
-      color: #000000;
-      text-align: center;
-      padding: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      z-index: 9999;
-    }
-  }
